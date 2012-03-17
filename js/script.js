@@ -27,7 +27,7 @@ function unlock(el){
     
     this.end = function(e){
         if(this.delta === this.containerWidth){
-            console.log('success');
+            alert('success');
         }
         this.dragger.style.webkitTransitionDuration = '400ms';
         this.dragger.style.webkitTransform = 'translate3d(0px, 0, 0)';

@@ -112,10 +112,13 @@ td { vertical-align: top; }
     position: absolute;
     width: 69px;
     height: 45px;
-    background-color:#fdfdfd;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FDFDFD), color-stop(50%, #DDD), color-stop(50%, #D1D1D1), color-stop(100%, #A1A1A1));
-    background: -webkit-linear-gradient(top, #FDFDFD 0%, #DDD 50%, #D1D1D1 50%, #A1A1A1 100%);
-    background: linear-gradient(top, #FDFDFD 0%, #DDD 50%, #D1D1D1 50%, #A1A1A1 100%);
+    background: #fdfdfd; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fdfdfd 0%, #dddddd 50%, #d1d1d1 50%, #a1a1a1 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdfdfd), color-stop(50%,#dddddd), color-stop(50%,#d1d1d1), color-stop(100%,#a1a1a1)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fdfdfd 0%,#dddddd 50%,#d1d1d1 50%,#a1a1a1 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fdfdfd 0%,#dddddd 50%,#d1d1d1 50%,#a1a1a1 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fdfdfd 0%,#dddddd 50%,#d1d1d1 50%,#a1a1a1 100%); /* IE10+ */
+    background: linear-gradient(top,  #fdfdfd 0%,#dddddd 50%,#d1d1d1 50%,#a1a1a1 100%); /* W3C */
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
