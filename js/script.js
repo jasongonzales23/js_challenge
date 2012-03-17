@@ -1,7 +1,6 @@
 function unlock(el){
     this.dragger = document.querySelector(el);
     this.draggerWidth = this.dragger.offsetWidth + 8; //add 8px to have it sit in the track nicer
-    this.dragger.style.webkitTransitionProperty = '-webkit-transform';
     this.dragger.style.webkitTransform = 'translate3d(0px, 0, 0)';
     
     this.start = function(e){
