@@ -29,7 +29,7 @@ function unlock(el){
         if(this.delta === this.containerWidth){
             alert('success');
         }
-        this.dragger.style.webkitTransitionDuration = '400ms';
+        this.dragger.style.webkitTransitionDuration = '200ms';
         this.dragger.style.webkitTransform = 'translate3d(0px, 0, 0)';
         document.removeEventListener('mousemove', this);
         document.removeEventListener('mouseup', this);        
