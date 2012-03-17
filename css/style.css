@@ -75,21 +75,63 @@ td { vertical-align: top; }
 
 .track {
     margin:20px auto;
-    height:60px;
+    /*height:60px;*/
     border:1px solid #444;
-    width:280px;
+    /*width:280px;*/
     position:relative;
     background: #888;
+    
+    width: 275px;
+height: 51px;
+/*position: absolute;*/
+
+
+
+
+background: -webkit-linear-gradient(top, #020509, #232527);
+background: -moz-linear-gradient(top, #020509, #232527);
+background: -ms-linear-gradient(top, #020509, #232527);
+background: -o-linear-gradient(top, #020509, #232527);
+background: linear-gradient(top, #020509, #232527);
+-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#020509', endColorstr='#232527', GradientType=0);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#020509', endColorstr='#232527', GradientType=0);
+border: 1px solid #333;
+-webkit-border-radius: 13px;
+-moz-border-radius: 13px;
+border-radius: 13px;
+    
 }
 
 .dragger {
-    height:56px;
-    width:70px;
-    border:1px solid #444;
+    /*height:56px;*/
+    /*width:70px;*/
+    /*border:1px solid #444;*/
     position:absolute;
-    top: 1px;
+    top: 3px;
     left:0px;
     background: #fff;
+    
+    position: absolute;
+width: 69px;
+height: 45px;
+/*left: 0;*/
+/*top: 3px;*/
+background: -webkit-linear-gradient(top, #FDFDFD 0%, #DDD 50%, #D1D1D1 50%, #A1A1A1 100%);
+background: -moz-linear-gradient(top, #FDFDFD 0%, #DDD 50%, #D1D1D1 50%, #A1A1A1 100%);
+background: -ms-linear-gradient(top, #FDFDFD 0%, #DDD 50%, #D1D1D1 50%, #A1A1A1 100%);
+background: -o-linear-gradient(top, #FDFDFD 0%, #DDD 50%, #D1D1D1 50%, #A1A1A1 100%);
+background: linear-gradient(top, #FDFDFD 0%, #DDD 50%, #D1D1D1 50%, #A1A1A1 100%);
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-webkit-box-shadow: rgba(0,0,0,0.9) 0 1px 1px;
+-moz-box-shadow: rgba(0,0,0,0.9) 0 1px 1px;
+box-shadow: rgba(0,0,0,0.9) 0 1px 1px;
+z-index: 10;
+margin: 0 3px;
+cursor: pointer;
+    
+    
 }
 
 

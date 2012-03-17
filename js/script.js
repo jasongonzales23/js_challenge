@@ -1,8 +1,6 @@
-
 function unlock(el){
     this.dragger = document.querySelector(el);
-    //var dragger = this.dragger; //will this help?
-    this.draggerWidth = this.dragger.offsetWidth + 2; //add 2px to have it sit in the track nicer
+    this.draggerWidth = this.dragger.offsetWidth + 8; //add 8px to have it sit in the track nicer
     this.dragger.style.webkitTransitionProperty = '-webkit-transform';
     this.dragger.style.webkitTransform = 'translate3d(0px, 0, 0)';
     
@@ -67,4 +65,4 @@ unlock.prototype = {
 };
 
 var myUnlock = new unlock('#one');
-var myUnlock2 = new unlock('#two');
+//var myUnlock2 = new unlock('#two');
