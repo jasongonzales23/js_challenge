@@ -26,7 +26,7 @@ function unlock(el){
         }
         this.dragger.style.webkitTransitionDuration = '0ms';
         this.dragger.style.webkitTransform = 'translate3d(' + this.delta + 'px, 0, 0)';
-    }
+    };
     
     this.end = function(e){
         if(this.delta === this.containerWidth){
@@ -37,7 +37,7 @@ function unlock(el){
         this.prompt.style.opacity = 1;
         document.removeEventListener('mousemove', this);
         document.removeEventListener('mouseup', this);        
-    }
+    };
     
     this.dragger.addEventListener('mousedown', this);
     this.dragger.addEventListener('touchstart', this);   
