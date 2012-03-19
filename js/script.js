@@ -3,7 +3,7 @@ function unlock(el){
     this.draggerWidth = this.dragger.offsetWidth + 8; //add 8px to have it sit in the track nicer
     this.dragger.style.webkitTransform = 'translate3d(0px, 0, 0)';
     this.prompt = document.querySelector('.prompt');
-    this.prompt.style.webkitTransitionDuration = '400ms';
+    this.prompt.style.webkitTransitionDuration = '200ms';
     this.prompt.style.webkitTransitionProperty = 'opacity';
     
     this.start = function(e){

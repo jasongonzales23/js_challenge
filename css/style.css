@@ -109,9 +109,6 @@ td { vertical-align: top; }
     z-index: 4;
 }
 
-.prompt .user-input {
-    opacity:0;
-}
 
 
 .dragger {
