@@ -2,6 +2,9 @@ function unlock(el){
     this.dragger = document.querySelector(el);
     this.draggerWidth = this.dragger.offsetWidth + 8; //add 8px to have it sit in the track nicer
     this.dragger.style.webkitTransform = 'translate3d(0px, 0, 0)';
+    this.prompt = document.querySelector('.prompt');
+    this.prompt.style.webkitTransitionDuration = '400ms';
+    this.prompt.style.webkitTransitionProperty = 'opacity';
     
     this.start = function(e){
         this.startDelta = e.touches ? e.touches[0].pageX : e.pageX;
@@ -15,7 +18,8 @@ function unlock(el){
     
     this.move = function(e){
         this.delta = (e.touches ? e.touches[0].pageX : e.pageX) - this.startDelta;
-       
+        this.prompt.style.opacity = 0;
+        
         if (this.delta < 0 ){ this.delta = 0;}
         if (this.delta > this.containerWidth){
             this.delta = this.containerWidth;
@@ -30,6 +34,7 @@ function unlock(el){
         }
         this.dragger.style.webkitTransitionDuration = '200ms';
         this.dragger.style.webkitTransform = 'translate3d(0px, 0, 0)';
+        this.prompt.style.opacity = 1;
         document.removeEventListener('mousemove', this);
         document.removeEventListener('mouseup', this);        
     }
